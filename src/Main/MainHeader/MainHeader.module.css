@@ -274,6 +274,57 @@
         opacity: 40%;
     }
 }
+@media (max-width: 425px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    .left{
+        width: 70%;
+
+    }
+    .right{
+        width: 100%;
+    }
+    .icon{
+        transform: scale(1) translateX(-45px);
+    }
+    .deg{
+        font-weight: 400;
+        font-size: 76px;
+    }
+    .today{
+        font-size: 25px;
+    }
+    .infoText{
+        transform: translateY(-20px);
+        font-size: 20px;
+    }
+    .block {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        margin-bottom: 34px;
+        position: relative;
+        z-index: 2;
+    }
+    .width {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        width: 40%;
+    }
+    .right::before{
+        content: url("../../Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 50%;
+        height: 55%;
+        right: 50px;
+        top: 0;
+        opacity: 40%;
+    }
+}
 
 @media (max-width: 320px){
     .row{
