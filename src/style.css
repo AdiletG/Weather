@@ -1,0 +1,198 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+}
+.app{
+    background: #0D1117;
+    min-height: 100vh;
+    color: #FFFFFF;
+}
+.app.light{
+    background: #FFFFFF;
+    color: black;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+    max-width: 1280px;
+}
+
+
+.form-box{
+    width: 100%;
+    height: 100vh;
+    background: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-card{
+    width: 500px;
+    height: 450px;
+    background: #2E3035;
+    border-radius: 20px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.form-card::before{
+    content: url("../src/Assets/Icons/Cloud.png");
+    position: absolute;
+    width: 30%;
+    height: 36%;
+    left: 40px;
+    top: 0;
+}
+.text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1024px){
+    .form-card{
+        width: 480px;
+        height: 430px;
+        padding: 50px 80px;
+
+    }
+    .form-card::before{
+        content: url("../src/Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 30%;
+        height: 36%;
+        left: 40px;
+        top: 0;
+    }
+    .text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 968px){
+    .form-card{
+        width: 450px;
+        height: 400px;
+        padding: 50px 80px;
+
+    }
+    .form-card::before{
+        content: url("../src/Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        left: 40px;
+        top: 0;
+    }
+    .text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .form-card{
+        width: 400px;
+        height: 350px;
+        padding: 50px 80px;
+
+    }
+    .form-card::before{
+        content: url("../src/Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        left: 40px;
+        top: 0;
+    }
+    .text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 450px){
+    .form-card{
+        width: 300px;
+        height: 200px;
+        padding: 50px 45px;
+
+    }
+    .form-card::before{
+        content: url("../src/Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        left: 40px;
+        top: 0;
+        opacity: 30%;
+    }
+    .text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 320px){
+    .form-card{
+        width: 280px;
+        height: 200px;
+        padding: 50px 45px;
+
+    }
+    .form-card::before{
+        content: url("../src/Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 30%;
+        height: 33%;
+        left: 40px;
+        top: 0;
+        opacity: 30%;
+    }
+    .text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+:root{
+    --blue:#4793FF;
+    --gray-block:#4F4F4F;
+    --gray-text:#939CB0;
+    --shadow:2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    --blue-block:rgba(71, 147, 255, 0.2);
+    --white-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+}
