@@ -90,7 +90,7 @@
         font-size: 30px;
     }
     .itemDate{
-        font-size: 17.8px;
+        font-size: 17.5px;
     }
     .light{
         background-color: #FFFFFF;
@@ -136,6 +136,22 @@
     }
 
 }
+
+@media (max-width: 640px) {
+    .card{
+        background: #2E3035;
+        border-radius: 10px;
+        padding: 11px 0 13px 11px;
+        width: calc(18.5% - 10.5px);
+    }
+    .light{
+        background-color: #FFFFFF;
+    }
+    .cardLight{
+        background-color: var(--blue-block);
+    }
+}
+
 @media (max-width: 450px){
     .title{
         font-size: 28px;
@@ -150,6 +166,7 @@
         flex-wrap: wrap;
         row-gap: 15px;
         align-items: center;
+        justify-content: center;
     }
     .row{
         margin-top: 15px;
@@ -196,7 +213,7 @@
     .card{
         border-radius: 10px;
         padding: 11px 0 13px 11px;
-        width: calc(30.5% - 5.5px);
+        width: calc(47.5% - 5px);
     }
     .light{
         background-color: #FFFFFF;
@@ -206,6 +223,44 @@
     }
 
 }
+
+@media (max-width: 375px){
+    .title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .itemDate{
+        font-size: 13px;
+    }
+    .listDate{
+        display: flex;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        align-items: center;
+    }
+    .row{
+        margin-top: 15px;
+        display: flex;
+        column-gap: 20px;
+        padding: 20px;
+        border-radius:  20px;
+        align-items: center;
+    }
+    .card{
+        border-radius: 10px;
+        padding: 11px 0 13px 11px;
+        width: calc(47.5% - 5px);
+    }
+    .light{
+        background-color: #FFFFFF;
+    }
+    .cardLight{
+        background-color: var(--blue-block);
+    }
+
+}
+
 @media (max-width: 320px){
     .title{
         font-size: 25px;

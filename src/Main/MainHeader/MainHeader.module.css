@@ -138,6 +138,7 @@
         font-size: 35px;
     }
 }
+
 @media (max-width: 968px) {
     .icon{
         transform: scale(0.7) translateX(-50px);;
@@ -150,6 +151,7 @@
         font-size: 30px;
     }
     .infoText{
+        transform: translateY(-25px);
         font-size: 23px;
     }
     .block {
@@ -187,7 +189,7 @@
         margin-bottom: 10px;
     }
     .icon{
-        transform: scale(0.6) translateX(-110px);
+        transform: scale(0.6) translateX(-80px);
     }
     .deg{
         font-weight: 400;
@@ -222,6 +224,55 @@
         top: 0;
     }
 }
+@media (max-width: 640px) {
+    .row{
+        column-gap: 40px;
+    }
+    .left{
+        width: 35%;
+    }
+    .right{
+        width: 65%;
+        padding: 25px 0 25px 32px;
+    }
+    .leftTop{
+        margin-bottom: 10px;
+    }
+    .icon{
+        transform: scale(0.6) translateX(-90px);
+    }
+    .deg{
+        font-weight: 400;
+        font-size: 63px;
+    }
+    .today{
+        font-size: 23px;
+    }
+    .infoText{
+        font-size: 18px;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-bottom: 34px;
+        position: relative;
+        z-index: 2;
+    }
+    .width {
+        display: flex;
+        column-gap: 10px;
+        width: 100%;
+    }
+    .right::before{
+        content: url("../../Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 40%;
+        height: 45%;
+        right: -10px;
+        top: 0;
+    }
+}
 
 @media (max-width: 450px){
     .row{
@@ -230,11 +281,11 @@
         row-gap: 40px;
     }
     .left{
-        width: 70%;
-
+        width: 80%;
+        padding: 0 40px 10px;
     }
     .right{
-        width: 100%;
+        width: 80%;
     }
     .icon{
         transform: scale(1) translateX(-35px);
@@ -262,7 +313,7 @@
         display: flex;
         align-items: center;
         column-gap: 10px;
-        width: 40%;
+        width: 100%;
     }
     .right::before{
         content: url("../../Assets/Icons/Cloud.png");
@@ -281,14 +332,14 @@
         row-gap: 40px;
     }
     .left{
-        width: 70%;
+        width: 100%;
 
     }
     .right{
         width: 100%;
     }
     .icon{
-        transform: scale(1) translateX(-55px);
+        transform: scale(0.8) translateX(-55px);
     }
     .deg{
         font-weight: 400;
@@ -313,7 +364,59 @@
         display: flex;
         align-items: center;
         column-gap: 10px;
-        width: 40%;
+        width: 100%;
+    }
+    .right::before{
+        content: url("../../Assets/Icons/Cloud.png");
+        position: absolute;
+        width: 50%;
+        height: 55%;
+        right: 50px;
+        top: 0;
+        opacity: 40%;
+    }
+}
+
+@media (max-width: 375px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    .left{
+        width: 100%;
+
+    }
+    .right{
+        width: 100%;
+    }
+    .icon{
+        transform: scale(0.8) translateX(-45px);
+    }
+    .deg{
+        font-weight: 400;
+        font-size: 76px;
+    }
+    .today{
+        font-size: 25px;
+    }
+    .infoText{
+        transform: translateY(-20px);
+        font-size: 20px;
+    }
+    .block {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        margin-bottom: 34px;
+        position: relative;
+        z-index: 2;
+    }
+    .width {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        width: 100%;
     }
     .right::before{
         content: url("../../Assets/Icons/Cloud.png");
@@ -334,13 +437,13 @@
     }
     .left{
         width: 100%;
-
+        padding: 0 25px;
     }
     .right{
         width: 100%;
     }
     .icon{
-        transform: scale(1) translateX(-45px);
+        transform: scale(0.8) translateX(-40px);
     }
     .deg{
         font-weight: 400;
@@ -362,6 +465,7 @@
         align-items: center;
         position: relative;
         z-index: 2;
+
     }
     .circle{
         width: 38px;
